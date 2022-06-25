@@ -20,7 +20,8 @@ const UsuarioSchema = new Schema({
   rol:{
     type:String,
     required:true,
-    enum:["ADMIN_ROLE","USER_ROLE"] //enum da dos opciones a escoger y debe ser solo uno de esas  
+    enum:["ADMIN_ROLE","USER_ROLE"], //enum da dos opciones a escoger y debe ser solo uno de esas ,
+    default:"USER_ROLE" 
   },
   estado:{
     type:Boolean,

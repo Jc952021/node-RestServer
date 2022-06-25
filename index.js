@@ -187,11 +187,23 @@ server.listen()
 
 //seccion11
 //vid4
-//ir a https://developers.google.com/identity/sign-in/web/sign-in
-//crear un proyecto - credenciales-id de cliente auth - copiar tu id y el secreto
+// ir a https://developers.google.com/identity/sign-in/web/sign-in
+// crear un proyecto - credenciales-id de cliente auth - copiar tu id y el secreto,agregar las urls autorizadas
+// poner el script <script src="https://accounts.google.com/gsi/client" async defer></script> en tu index
+// agregr al index un script de la pag
+// crear a ruta y el controlador para el google
+// hacer un fetch en el script del index al logear
+// video de como autenticar con react
+// https://www.youtube.com/watch?v=roxC8SMs7HU
 
-//vid5
-//en esa misma pagina te dira como poner un script y algunas funciones, en el index.html
+// descargar npm install google-auth-library --save
+// pag https://developers.google.com/identity/gsi/web/guides/verify-google-id-token
+// en helpers crear una funcion para verificar,solo necesito el email,name,picture
+// para qure coincida con el ddel modelo usuario,renombrar lo que retorna la funcion
+// ejecutar ese verif en el controlador api/auth
+
+// en el controlador auth,cuando el usuario logea, si hay un usuarioo existente entonces crearle un token
+// si no hay usuario,entonces crear un nuevo con los datos que le llego en el param 
 
 //seccion12
 //vid4
@@ -292,3 +304,71 @@ server.listen()
 
 //vid5
 //instalacion de socket, en el modelo server crear el io
+
+//vd6
+//coectar el io en el server
+
+//vid7
+//crear dos botones en el index - online- ofline y en el js atrapar sus ids y mostrar de acuerdo a si esta conectado
+
+//vid8
+//al enviar un input, que reciba ese texto en el servidor
+
+//vid9
+//el servidor que envie a los cliente lo que envio un cliente
+
+//vid10
+//crear una carp sockets y crear ahi el controlador donde ira la funcion del socket server
+
+//vid11
+//subirlo a heroku
+
+//seccion15
+//vid3
+//crear un nuevo proyecto y pegar en el public la carpeta descargada 
+
+//vid4
+//crear una clase ticketcontrol en el modelo 
+//crear un contructor con los tickets
+//crear una carp db para los tickets
+//crear un get que retornara un objeto json para la clase ticketcontrol
+//crear una funcion en la clase ticketcontrol para iniciar el db y ejecutarlo en el contructor
+//en el server cuando se ejecuta el sockets,este usa el controller
+// en ese controller, ejecutar el modelo ticketcontrol- al momoento de importar el ticketcontrol
+//este ejecuta todo lo que esta dentro de ese archivo, osea el contexto y algunas variables-ejecutando el init de la clase
+//en la funcion init hacer algo si coincide con el this.hoy y guardar en la db
+
+//vid5
+//funcion para crear un ticket siguiente, crear tambien una nueva clase para el ticket
+//funcion para atender el ticket
+
+//vid6
+//del socket del server,recibir del cliente un valor, y enviarlo un callback de acuerdo a lo que mando el cliente
+//agregar el socket io al indexnuevo-ticket,atrapar el boton y el texto.ir al js-socket del cliente(nuevo-ticket) y haver mejoras
+//al dar click en el boton,el cliente envia un valor, y el server lo recibe y lo guarda en la db, reiniciando el nodemon
+//para que no reinicie, se crea un nodemon.json y se bloquea el db.json
+//al actualizar la pagina,el server debe enviar el ultimo ticket para que el cliente lo reciba y lo tenga por default
+
+//vid7
+//ir al escritorio.js
+//al escribir en el input, me lleva al index del escritorio con el parametro que escribi en el input
+//validar que sea escritorio ,lo que escribo y mostrar su valor en el index
+
+//vid8
+//al dar click que emita un evento al server, y este me regresa un callback donde el ticket ya fue atendido
+//el alert se mostrara en el cliente si no hay tickets
+
+//vid9
+//ir al publico.js y mostrar los ultimos tickets en el index
+
+//vid10
+//en escritorio, que muestre los tickets en la cola
+//al atender el ticket, que muestre el ticket atendido en la cola
+//al generar un tcket que refleje en el escritorio cola
+
+//vid11
+//añadir un audio en el index publico.js
+
+//seccion16
+//vid3
+//iniciar el proyecto 

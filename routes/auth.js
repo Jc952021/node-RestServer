@@ -13,8 +13,13 @@ check("password","La contraseña es obligatoria").not().isEmpty(),
 validarCampos
 ],authLogin)
 
+router.post("/google",[
+check("id_token","Debe ser un token valido").not().isEmpty(),
+validarCampos
+],googleSignin)
 
-router.post("/google",googleSignin)
+
+
 
 
 module.exports=router
